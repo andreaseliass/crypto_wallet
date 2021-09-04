@@ -3,14 +3,16 @@
 <p>  Data: <%= data_br(Date.today) %></p>
 <p> <%= nome_aplicacao %> </p>
 
-<ul>
+<%= render "menu" %>
 
-  <li>
-    <a href="/coins">Cadastro de moedas</a>
-  </li>
+<p>
+  Você está em ambiente de <strong><%=ambiente_rails%></strong>
+</p>
 
-  <li>
-    <%= link_to "Cadastro de Moedas", coins_path %>
-  </li>
+<p> 
+  Eu sou uma variável de instância/sessão <strong> <%= @meu_nome %></strong>
+</p>
 
-</ul>
+<p> 
+  Meu curso é o curso de <strong> <%= @curso %></strong>
+</p>
